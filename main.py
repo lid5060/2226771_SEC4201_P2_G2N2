@@ -1,4 +1,6 @@
+from subprocess import call
 import psutil
+import menu1
 while True:
     print ("Welcome to Brenda's Buggy Byte Barn\n")
 # the menu which will drive the entire programme
@@ -14,10 +16,10 @@ while True:
         print("Not an option try again")
     elif choice == 1:
         print("cpu cores")
-        print(psutil.cpu_count())
+# import python files in this one and open them have multiple python files to make the different menus
+        call(["python", menu1])
     elif choice == 2:
         print("cpu times")
         print(psutil.cpu_times())
     elif choice ==0:
         break
-    
