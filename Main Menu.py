@@ -18,7 +18,7 @@ while True:
             with open('CPU Usage.py') as file:
                 exec(file.read())
         elif menu == 2:
-            with open('Memory Usage.py') as file:
+            with open('Memory.py') as file:
                 exec(file.read())
         elif menu == 3:
             print("disk usage")
