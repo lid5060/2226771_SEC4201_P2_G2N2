@@ -31,4 +31,5 @@ while True:
 # the exec command is used to execute the code within the file
     except Exception:
         print("An error has occurred, please try again")
-# the try will try and execute the code, if it fails it will print the error message in the except block
+# the try will try and execute the code,
+# if it fails it will print the error message in the except block
