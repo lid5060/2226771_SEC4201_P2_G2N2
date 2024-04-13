@@ -21,7 +21,7 @@ while True:
             with open('Memory.py') as file:
                 exec(file.read())
         elif menu == 3:
-            with open('Disk.py') as file:
+            with open('Disk Usage.py') as file:
                 exec(file.read())
         elif menu == 4:
             with open('bibliography.py') as file:
