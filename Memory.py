@@ -58,6 +58,12 @@ while True:
             print("Active memory:", bytes2human(active_memory))
             inactive_memory = psutil.virtual_memory().inactive
             print("Inactive memory:", bytes2human(inactive_memory))
+            buffers_memory = psutil.virtual_memory().buffers
+            print("Buffers memory:", bytes2human(buffers_memory))
+            cached_memory = psutil.virtual_memory().cached
+            print("Cached memory:", bytes2human(cached_memory))
+            shared_memory = psutil.virtual_memory().shared
+            print("Shared memory:", bytes2human(shared_memory))
             print("Enter 0 to return to main menu")
             memory_menu = int(input())
             if memory_menu == 0:
