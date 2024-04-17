@@ -7,5 +7,5 @@ def run_bash_script(script_path):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Replace 'script.sh' with your bash script path
+print("Your disk usage is:")
 run_bash_script('Disk_Usage.sh')
