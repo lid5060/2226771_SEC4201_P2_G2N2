@@ -9,3 +9,4 @@ def run_bash_script(script_path):
 
 print("Your disk usage is:")
 run_bash_script('Disk_Usage.sh')
+input("Press enter to continue")
