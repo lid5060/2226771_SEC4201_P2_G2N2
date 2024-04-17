@@ -1,5 +1,5 @@
 print("Welcome to the User Management section")
-input(int("Enter 1 to add a user\n"))
+input(int("Enter 1 to create a user\n"))
 input(int("Enter 2 to create a group\n"))
 input(int("Enter 3 to modify a users password\n"))
 input(int("Enter 4 to modify a users group/permissions on a file\n"))
