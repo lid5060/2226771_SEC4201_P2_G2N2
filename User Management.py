@@ -1,0 +1,5 @@
+print("Welcome to the User Management section")
+input(int("Enter 1 to add a user\n"))
+input(int("Enter 2 to create a group\n"))
+input(int("Enter 3 to modify a user\n"))
+input(int("Enter 4 to delete a user\n"))

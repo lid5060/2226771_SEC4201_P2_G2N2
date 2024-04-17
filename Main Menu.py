@@ -24,6 +24,9 @@ while True:
             with open('Disk Usage.py') as file:
                 exec(file.read())
         elif menu == 4:
+            with open('User Management.py') as file:
+                exec(file.read())
+        elif menu == 5:
             with open('bibliography.py') as file:
                 exec(file.read())
         elif menu == 0:
