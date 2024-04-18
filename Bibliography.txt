@@ -1,0 +1,19 @@
+    Bibliography
+    Chris, K., 2022. with open in python with statement syntax example. [Online]
+    Available at: https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/
+    [Accessed 14 March 2024]
+    user3063850, 2014. psutil virtual memory units of measurement?.[Online]
+    Available at: https://stackoverflow.com/questions/21792655/psutil-virtual-memory-units-of-measurement
+    [Accessed 15 March 2024]
+    Cruz, R.S., 2018. Bash scripting cheatsheet.[Online]
+    Available at: https://devhints.io/bash
+    [Accessed 17 April 2024]
+    geeks, g. f., 2024. Bash Scripting – Introduction to Bash and Bash Scripting. [Online]
+    Available at: https://www.geeksforgeeks.org/bash-scripting-introduction-to-bash-and-bash-scripting/
+    [Accessed 17 April 2024]
+    Hira, Z., 2023. Bash Scripting Tutorial – Linux Shell Script and Command Line for Beginners. [Online]
+    Available at: Available at: https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/
+    [Accessed 17 April 2024]
+    Courtney, 2013. How do I print the content of a .txt file in Python?. [Online]
+    Available at: https://stackoverflow.com/questions/18256363/how-do-i-print-the-content-of-a-txt-file-in-python
+    [Accessed 18 April 2024]
