@@ -7,13 +7,12 @@ while True:
         print("Enter 1 to enter CPU usage")
         print("Enter 2 to enter memory usage")
         print("Enter 3 to enter disk usage")
-        print("Enter 4 to enter user management")
-        print("Enter 5 to enter bibliography")
+        print("Enter 4 to enter bibliography")
         print("Enter 0 to exit")
         menu = int(input())
         if menu < 0:
             print("Not an option try again")
-        elif menu > 5:
+        elif menu > 4:
             print("Not an option try again")
         elif menu == 1:
             with open('CPU Usage.py') as file:
@@ -25,9 +24,6 @@ while True:
             with open('Disk Usage.py') as file:
                 exec(file.read())
         elif menu == 4:
-            with open('User Management.py') as file:
-                exec(file.read())
-        elif menu == 5:
             with open('bibliography.py') as file:
                 exec(file.read())
         elif menu == 0:
