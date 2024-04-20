@@ -1,6 +1,53 @@
-print("Welcome to the User Management section")
-input(int("Enter 1 to create a user\n"))
-input(int("Enter 2 to create a group\n"))
-input(int("Enter 3 to modify a users password\n"))
-input(int("Enter 4 to modify a users group/permissions on a file\n"))
-input(int("Enter 5 to delete a user\n"))
+import subprocess
+try:
+    print("Welcome to the User Management section")
+    print("Enter 1 to create a user")
+    print("Enter 2 to create a group")
+    print("Enter 3 to modify a users password")
+    print("Enter 4 to modify a users group/permissions on a file")
+    print("Enter 5 to delete a user")
+    input = int(input())
+    if input == 1:
+        def bash_create_user(script_path):
+            try:
+                output = subprocess.check_output(['bash', script_path])
+                print(output.decode('utf-8'))
+            except Exception as e:
+                print(f"An error occurred: {e}")
+        bash_create_user('Add_User.sh')
+    elif input == 2:
+        def bash_create_group(script_path):
+            try:
+                output = subprocess.check_output(['bash', script_path])
+                print(output.decode('utf-8'))
+            except Exception as e:
+                print(f"An error occurred: {e}")
+    elif input == 3:
+        def bash_modify_password(script_path):
+            try:
+                output = subprocess.check_output(['bash', script_path])
+                print(output.decode('utf-8'))
+            except Exception as e:
+                print(f"An error occurred: {e}")
+    elif input == 4:
+        def bash_modify_group(script_path):
+            try:
+                output = subprocess.check_output(['bash', script_path])
+                print(output.decode('utf-8'))
+            except Exception as e:
+                print(f"An error occurred: {e}")
+    elif input == 5:
+        def bash_delete_user(script_path):
+            try:
+                output = subprocess.check_output(['bash', script_path])
+                print(output.decode('utf-8'))
+            except Exception as e:
+                print(f"An error occurred: {e}")
+    else:
+        print("Not an option try again")
+except ValueError:
+    print("Please enter a number")
+except FileNotFoundError:
+    print("File not found")
+except KeyboardInterrupt:
+    print("Keyboard interrupt")

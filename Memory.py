@@ -72,5 +72,9 @@ while True:
             break
         else:
             print("Not an option try again")
-    except Exception:
-        print("An error has occurred, please try again")
+    except ValueError:
+        print("Please enter a number")
+    except FileNotFoundError:
+        print("File not found")
+    except KeyboardInterrupt:
+        print("Keyboard interrupt")

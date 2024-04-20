@@ -7,5 +7,9 @@ while True:
         bibliography_menu = int(input())
         if bibliography_menu == 0:
             break
-    except Exception:
-        print("An error has occurred, please try again")
+    except ValueError:
+        print("Please enter a number")
+    except FileNotFoundError:
+        print("File not found")
+    except KeyboardInterrupt:
+        print("Keyboard interrupt")

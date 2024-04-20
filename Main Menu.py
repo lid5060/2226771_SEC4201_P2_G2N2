@@ -4,15 +4,16 @@ while True:
 # numbers are being used to make the menu easier to use with multiple items
 # implement error handling if letters or decimals are entered
     try:
-        print("Enter 1 to see CPU usage")
-        print("Enter 2 to see memory usage")
-        print("Enter 3 to see disk usage")
-        print("Enter 4 to see bibliography")
+        print("Enter 1 to enter CPU usage")
+        print("Enter 2 to enter memory usage")
+        print("Enter 3 to enter disk usage")
+        print("Enter 4 to enter user management")
+        print("Enter 5 to enter bibliography")
         print("Enter 0 to exit")
         menu = int(input())
         if menu < 0:
             print("Not an option try again")
-        elif menu > 4:
+        elif menu > 5:
             print("Not an option try again")
         elif menu == 1:
             with open('CPU Usage.py') as file:
@@ -33,7 +34,12 @@ while True:
             break
 # the with command is used to open the file so that it closes down when the code is done
 # the exec command is used to execute the code within the file
-    except Exception:
-        print("An error has occurred, please try again")
+# change all except blocks to handle specific errors rather than all errors allowing for more specific error messages
+    except ValueError:
+        print("Please enter a number")
+    except FileNotFoundError:
+        print("File not found")
+    except KeyboardInterrupt:
+        print("Keyboard interrupt")
 # the try will try and execute the code,
 # if it fails it will print the error message in the except block
