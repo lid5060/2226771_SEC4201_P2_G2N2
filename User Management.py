@@ -1,4 +1,5 @@
 import subprocess
+import os
 try:
     print("Welcome to the User Management section")
     print("Enter 1 to create a user")
@@ -53,4 +54,3 @@ except KeyboardInterrupt:
     print("Keyboard interrupt")
 except TypeError:
     print("Type error")
-    
