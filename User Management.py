@@ -51,3 +51,5 @@ except FileNotFoundError:
     print("File not found")
 except KeyboardInterrupt:
     print("Keyboard interrupt")
+except TypeError:
+    print("Type error")
