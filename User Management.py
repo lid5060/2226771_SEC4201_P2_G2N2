@@ -6,8 +6,8 @@ try:
     print("Enter 3 to modify a users password")
     print("Enter 4 to modify a users group/permissions on a file")
     print("Enter 5 to delete a user")
-    input = int(input())
-    if input == 1:
+    menu = int(input())
+    if menu == 1:
         def bash_create_user(script_path):
             try:
                 output = subprocess.check_output(['bash', script_path])
@@ -15,28 +15,28 @@ try:
             except Exception as e:
                 print(f"An error occurred: {e}")
         bash_create_user('Add_User.sh')
-    elif input == 2:
+    elif menu == 2:
         def bash_create_group(script_path):
             try:
                 output = subprocess.check_output(['bash', script_path])
                 print(output.decode('utf-8'))
             except Exception as e:
                 print(f"An error occurred: {e}")
-    elif input == 3:
+    elif menu == 3:
         def bash_modify_password(script_path):
             try:
                 output = subprocess.check_output(['bash', script_path])
                 print(output.decode('utf-8'))
             except Exception as e:
                 print(f"An error occurred: {e}")
-    elif input == 4:
+    elif menu == 4:
         def bash_modify_group(script_path):
             try:
                 output = subprocess.check_output(['bash', script_path])
                 print(output.decode('utf-8'))
             except Exception as e:
                 print(f"An error occurred: {e}")
-    elif input == 5:
+    elif menu == 5:
         def bash_delete_user(script_path):
             try:
                 output = subprocess.check_output(['bash', script_path])
@@ -53,3 +53,4 @@ except KeyboardInterrupt:
     print("Keyboard interrupt")
 except TypeError:
     print("Type error")
+    
